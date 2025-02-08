@@ -1,15 +1,17 @@
+/* General Styles */
 .loan-calculator {
-    width: 96%;
-    max-width: 90%;
-    height: 90vh;
+    width: 97%;
+    height: 93vh;
     background: #1e2a38;
     color: white;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     font-family: Arial, sans-serif;
+    // margin: auto;
   }
   
+  /* Funding Box */
   .funding-box {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
@@ -27,6 +29,7 @@
     opacity: 0.7;
   }
   
+  /* Loan Sections */
   .loan-section {
     margin: 15px 0;
     text-align: center;
@@ -37,16 +40,18 @@
     font-size: 20px;
   }
   
+  /* Range Sliders */
   input[type="range"] {
     width: 100%;
     appearance: none;
-    height: 5px;
+    height: 6px;
     background: #00b4d8;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
   }
   
+  /* EMI Box */
   .emi-box {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
@@ -59,6 +64,7 @@
     font-size: 22px;
   }
   
+  /* Apply Button */
   .apply-btn {
     width: 100%;
     background: #00b4d8;
@@ -75,15 +81,66 @@
     background: #0077a8;
   }
   
-
-@media screen and (min-width: 768px) {
+  /* ✅ RESPONSIVE DESIGN */
+  @media (max-width: 1024px) {
     .loan-calculator {
-        max-width: 100%;
-        padding: 30px;
+      max-width: 95%;
     }
-
+  
+    .funding-box h2, .emi-box h2 {
+      font-size: 20px;
+    }
+  
+    .loan-section h3 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .loan-calculator {
+      max-width: 80%;
+      padding: 15px;
+    }
+  
+    .funding-box h2, .emi-box h2 {
+      font-size: 18px;
+    }
+  
+    .loan-section h3 {
+      font-size: 17px;
+    }
+  
     .apply-btn {
-        font-size: 18px;
-        padding: 12px;
+      font-size: 15px;
+      padding: 10px;
     }
-}
+  }
+  
+  @media (max-width: 480px) {
+    .loan-calculator {
+      max-width: 95%;
+      padding: 12px;
+    }
+  
+    .funding-box, .emi-box {
+      padding: 10px;
+    }
+  
+    .funding-box h2, .emi-box h2 {
+      font-size: 16px;
+    }
+  
+    .loan-section h3 {
+      font-size: 16px;
+    }
+  
+    input[type="range"] {
+      height: 4px;
+    }
+  
+    .apply-btn {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
