@@ -1,0 +1,30 @@
+<div class="loan-calculator">
+    <h3>Loan Calculator</h3>
+  
+    <div class="funding-box">
+      <p>Maximum Funding</p>
+      <h2>Rp {{ maxFunding | number }}</h2>
+      <p>Honda ADV 150 CBS <span class="year">2022</span></p>
+    </div>
+  
+    <div class="loan-section">
+      <p>Loan Amount</p>
+      <h3>Rp {{ loanAmount | number }}</h3>
+      <input type="range" [(ngModel)]="loanAmount" (input)="calculateEMI()" min="1000000" max="17480000" step="100000">
+    </div>
+  
+    <div class="loan-section">
+      <p>Loan Period</p>
+      <h3>{{ loanPeriod }} Months</h3>
+      <input type="range" [(ngModel)]="loanPeriod" (input)="calculateEMI()" min="6" max="18" step="1">
+    </div>
+  
+    <div class="emi-box">
+      <p>Estimated Monthly Installment</p>
+      <h2>Rp {{ emi | number }}</h2>
+      <small>Installment fees may change according to the verification results.</small>
+    </div>
+  
+    <button class="apply-btn" (click)="applyLoan()">APPLY LOAN</button>
+  </div>
+  

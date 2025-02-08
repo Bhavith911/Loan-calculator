@@ -1,0 +1,89 @@
+.loan-calculator {
+    width: 96%;
+    max-width: 90%;
+    height: 90vh;
+    background: #1e2a38;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .funding-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .funding-box h2 {
+    margin: 5px 0;
+    font-size: 22px;
+  }
+  
+  .funding-box .year {
+    font-size: 14px;
+    opacity: 0.7;
+  }
+  
+  .loan-section {
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .loan-section h3 {
+    margin: 5px 0;
+    font-size: 20px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+    appearance: none;
+    height: 5px;
+    background: #00b4d8;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .emi-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  
+  .emi-box h2 {
+    margin: 5px 0;
+    font-size: 22px;
+  }
+  
+  .apply-btn {
+    width: 100%;
+    background: #00b4d8;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  
+  .apply-btn:hover {
+    background: #0077a8;
+  }
+  
+
+@media screen and (min-width: 768px) {
+    .loan-calculator {
+        max-width: 100%;
+        padding: 30px;
+    }
+
+    .apply-btn {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
